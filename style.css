@@ -1,0 +1,32 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.header{
+display: flex;
+justify-content: space-around;
+align-items: center;
+justify-items: center;
+height: 60px;
+width: 100%;
+background-color: black;
+
+
+}
+.header>a{
+  text-decoration: none;
+  color: white;
+}
+.about-container{
+min-height: 100vh;
+}
+
+footer{
+  background-color: aliceblue;
+}
