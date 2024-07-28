@@ -5,26 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
-  
 </head>
 <body>
+  <!-- Cabeçalho -->
   <header class="header">
+    <!-- Menu de navegação do cabeçaçho -->
     <a class="logo" href="index.html"><img class="avatar" src="img/Open Peeps - Avatar.png" alt="">RochaDev</a>
     <a href="#sobre">Sobre mim</a>
     <a href="#portfolio">Projetos</a>
     <a href="#formacao">Formação Educacional</a>
     <a href="#contato">Contato</a>
   </header>
+  <!-- Conteúdo principal -->
   <main class="container">
+    <!-- Seção de sobre -->
     <section  id="sobre" class="about-container">
       <img class="about-img" src="./img/Open Peeps - Sitting.png" alt="">
       <div class="sobre"><img class="cafe" src="img/coffee.gif" alt=""><img class="solange" src="img/doggie.gif" alt="">Olá, me chamo Anderson, adorador de café com código. Amo minha cachorrinha Solange e sou estudante de ADS querendo construir uma carreira sólida em backend.</div>
     </section>
     <h1 id="portfolio" class="portfolio-title
     ">Projetos</h1>
+    <!-- Seção do portfólio -->
     <section  class="portfolio">
       <div class="cards-container">
         <div class="card">
@@ -47,18 +48,40 @@
         </div>
       </div>
     </section>
-    <section id="formacao" class="formacao"></section>
+    <!-- Seção de Formação Acadêmica -->
+    <section  class="formacao">
+      <h2 id="formacao" class="portfolio-title">Formação Acadêmica</h2>
+      <div class="education-container">
+        <img class="about-img" src="img/SitReadingDoodle.svg" alt="">
+        <ul class="education-text">
+            <li class="first-li">Análise e Desenvolvimento de Sistemas - Uninter (07/26) </li>
+            <li>Inglês - Intermediário</li>
+        </ul>
+      
+
+      </div>
+
+    </section>
   </main>
-  <footer id="contato">
-    <nav>
+  <!-- Seção do Rodapé -->
+  <footer class="footer-container">
+    <h2 class="contact-title">Contato</h2>
+    <!-- Menu de navegação do rodapé -->
+    <nav id="contato" class="nav-container">
       <a href="#sobre">Sobre mim</a>
       <a href="#portfolio">Projetos</a>
       <a href="#formacao">Formação Educacional</a>
     </nav>
+    <!-- Seção do formulário pra contato -->
     <section>
-      <form action="">
+      <form class="form-container" action="">
         <label for="nome">Nome</label>
         <input name="nome" id="nome" type="text">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <label for="msg">Mensagem</label>
+        <textarea name="msg" id="msg"></textarea>
+        <input class="btn-card" type="button" value="Enviar">
       </form>
     </section>
 
