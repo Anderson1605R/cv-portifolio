@@ -5,21 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+  
 </head>
 <body>
   <header class="header">
-    <a href="index.html">RochaDev</a>
+    <a class="logo" href="index.html"><img class="avatar" src="img/Open Peeps - Avatar.png" alt="">RochaDev</a>
     <a href="#sobre">Sobre mim</a>
     <a href="#portfolio">Projetos</a>
     <a href="#formacao">Formação Educacional</a>
     <a href="#contato">Contato</a>
   </header>
   <main class="container">
-    <section class="about-container">
-      <img src="./img/anderson.png" alt="">
-      <div id="sobre" class="sobre">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, officiis veritatis architecto eaque vitae labore at asperiores distinctio laborum, ab sunt, dignissimos ea perferendis? Tempora quia suscipit facilis consectetur natus?</div>
+    <section  id="sobre" class="about-container">
+      <img class="about-img" src="./img/Open Peeps - Sitting.png" alt="">
+      <div class="sobre"><img class="cafe" src="img/coffee.gif" alt=""><img class="solange" src="img/doggie.gif" alt="">Olá, me chamo Anderson, adorador de café com código. Amo minha cachorrinha Solange e sou estudante de ADS querendo construir uma carreira sólida em backend.</div>
     </section>
-    <section id="portfolio" class="portfolio"></section>
+    <h1 id="portfolio" class="portfolio-title
+    ">Projetos</h1>
+    <section  class="portfolio">
+      <div class="cards-container">
+        <div class="card">
+          <img class="card-img" src="img/neuroconexao.png" alt="">
+          <h2>NeuroConexão</h2>
+          <p>Projeto focado na empregabilidade de pessoas neurodiversas</p>
+          <a class="btn-card" href="https://neuro-conexao.vercel.app/" target="_blank">Visitar</a>
+        </div>
+        <div class="card">
+          <img class="card-img" src="img/fit.png" alt="">
+          <h2>FitProgress</h2>
+          <p>Projeto que monitora sua progressão de carga na academia</p>
+          <a class="btn-card" href="#">Em Breve!</a>
+        </div>
+        <div class="card">
+          <img class="card-img" src="img/breve.png" alt="">
+          <h2>Em Breve!</h2>
+          <p>Projeto focado na empregabilidade de pessoas neurodiversas</p>
+          <a class="btn-card" href="#">Em Breve!</a>
+        </div>
+      </div>
+    </section>
     <section id="formacao" class="formacao"></section>
   </main>
   <footer id="contato">

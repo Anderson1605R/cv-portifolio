@@ -1,21 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 *{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  
 }
 body{
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  margin-right: 10%;
+  margin-left: 10%;
+
 }
 .header{
 display: flex;
 justify-content: space-around;
 align-items: center;
 justify-items: center;
-height: 60px;
+min-height: 10vh;
 width: 100%;
-background-color: black;
+margin-bottom: 50px;
+background-color: #242424;
 
 
 }
@@ -23,10 +30,265 @@ background-color: black;
   text-decoration: none;
   color: white;
 }
-.about-container{
-min-height: 100vh;
+.header>a:hover{
+  text-decoration: none;
+  color: #EE8090;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.avatar{
+  width: 50px;
 }
 
+.about-container{
+min-height: 100vh;
+padding: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.about-img{
+  width: 40%;
+}
+.sobre{
+  font-size: 50px;
+  font-weight: 500;
+  width: 50%;
+}
+.cafe{
+  width: 110px;
+  position: absolute;
+  right: 290px;
+  bottom: 125px;
+ 
+}
+.solange{
+  width: 125px;
+}
+
+
+
+.portfolio{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 100px;
+}
+.portfolio-title{
+  text-align: center;
+  font-size: 100px;
+}
+.cards-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+
+  width: 300px;
+  height: 500px;
+  background-color: #EE8090;
+  border-radius: 8px;
+}
+.card-img{
+  width: 100%;
+}
+.btn-card{
+background-color: #8D31E3;
+text-align: center;
+width: 100px;
+padding: 5px;
+border-radius: 5px;
+color: wheat;
+font-weight: 600;
+}
+.btn-card:hover{
+  background-color:#6a17b7 ;
+}
 footer{
   background-color: aliceblue;
+}
+
+@media only screen and (max-width: 1440px) {
+  .about-img{
+    width: 40%;
+  }
+  .sobre{
+    font-size: 40px;
+ 
+    width: 50%;
+  }
+  .cafe{
+    width: 120px;
+    position: absolute;
+    right: 155px;
+    bottom: 125px;
+   
+  }
+  
+}
+@media only screen and (max-width: 1024px) {
+  .about-img{
+    width: 40%;
+  }
+  .sobre{
+    font-size: 25px;
+
+    width: 50%;
+  }
+  .solange{
+    width: 100px;
+  }
+  .cafe{
+    width: 80px;
+    position: absolute;
+    right: 310px;
+    bottom: 125px;
+   
+  }
+  
+}
+@media only screen and (max-width: 768px) {
+  .header>a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+  }
+  .about-img{
+    width: 40%;
+  }
+  .sobre{
+    font-size: 19px;
+   
+    width: 50%;
+  }
+  .solange{
+    width: 100px;
+  }
+  .cafe{
+    width: 70px;
+    position: absolute;
+    right: 220px;
+    bottom: 145px;
+   
+  }
+
+  .cards-container{
+    justify-content: center;
+
+  }
+
+
+  
+}
+@media only screen and (max-width: 480px) {
+   body{
+   
+    margin-right: 5%;
+    margin-left: 5%;
+  
+  }
+  .header>a{
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+  }
+  .avatar{
+    width: 40px;
+  }
+  .about-img{
+    width: 50%;
+  }
+  .sobre{
+    font-size: 15px;
+
+    width: 50%;
+  }
+  .solange{
+    width: 50px;
+  }
+  .cafe{
+    width: 40px;
+    position: absolute;
+    right: 130px;
+    bottom: 175px;
+   
+  }
+
+  .portfolio-title{
+     font-size: 70px;
+  }
+
+  .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+  
+    width: 300px;
+    height: 300px;
+    background-color: #EE8090;
+    border-radius: 8px;
+  }
+  
+}
+@media only screen and (max-width: 414px) {
+ 
+  .header>a{
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+  }
+  .avatar{
+    width: 33px;
+  }
+
+  .about-img{
+    width: 50%;
+  }
+  .sobre{
+    font-size: 15px;
+    font-weight: 600;
+  
+    width: 50%;
+  }
+  .solange{
+    width: 50px;
+  }
+  .cafe{
+    width: 40px;
+    position: absolute;
+    right: 70px;
+    bottom: 165px;
+   
+  }
+
+  .portfolio-title{
+    font-size: 60px;
+ }
+
+ .card{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   padding: 15px;
+ 
+   width: 300px;
+   height: 300px;
+   background-color: #EE8090;
+   border-radius: 8px;
+ }
+  
 }
